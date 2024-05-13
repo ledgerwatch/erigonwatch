@@ -1,4 +1,5 @@
 import {
+	DownloadedStats,
 	SegmentPeer,
 	SnapshotDownloadStatus,
 	SnapshotIndexingStatus,
@@ -110,8 +111,20 @@ const jsonToSegment = (json: any, indexed: number, name: string): SnapshotSegmen
 		downloadedBytes: json.downloadedBytes,
 		webseeds: peersFromJson(json.webseeds),
 		peers: peersFromJson(json.peers),
-		indexed: indexed
+		indexed: indexed,
+		downloadedStats: downloadedStatsFromJson(json?.downloadedStats)
 	};
+};
+
+const downloadedStatsFromJson = (json: any): DownloadedStats | null => {
+	if (json) {
+		return {
+			timeTook: json?.timeTook,
+			averageRate: json?.averageRate
+		};
+	} else {
+		return null;
+	}
 };
 
 const peersFromJson = (json: any): SegmentPeer[] => {

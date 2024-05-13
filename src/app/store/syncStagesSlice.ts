@@ -33,6 +33,12 @@ export interface SnapshotSegmentDownloadStatus {
 	webseeds: SegmentPeer[];
 	peers: SegmentPeer[];
 	indexed: number;
+	downloadedStats: DownloadedStats | null;
+}
+
+export interface DownloadedStats {
+	timeTook: number;
+	averageRate: number;
 }
 
 export interface SegmentPeer {
