@@ -34,7 +34,6 @@ export const connectionSlice = createSlice({
 			state.isConnectedToNode = action.payload;
 		},
 		setNodeConnectionType: (state, action: PayloadAction<NodeConnectionType>) => {
-			console.log("Node connection type: ", action.payload);
 			state.nodeConnectionType = action.payload;
 		},
 		setBackendAddress: (state, action: PayloadAction<string>) => {

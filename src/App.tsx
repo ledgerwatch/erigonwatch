@@ -3,7 +3,14 @@ import { useEffect, useState } from "react";
 import { ProcessPage } from "./app/pages/ProcessPage";
 import { LogsPage } from "./app/pages/LogsPage";
 import { useDispatch, useSelector } from "react-redux";
-import { addOrUpdateSession, resetAppStateToMockState, selectActiveNodeId, selectActiveSessionPin, selectDBsForNode } from "./app/store/appSlice";
+import {
+	addOrUpdateSession,
+	resetAppStateToMockState,
+	selectActiveNodeId,
+	selectActiveSession,
+	selectActiveSessionPin,
+	selectDBsForNode
+} from "./app/store/appSlice";
 import {
 	getBackendUrl,
 	getBootnodes,
@@ -126,11 +133,18 @@ function Layout() {
 	const activeNodeId = useSelector(selectActiveNodeId);
 	const dbs = useSelector(selectDBsForNode);
 	const activeSessionPin = useSelector(selectActiveSessionPin);
+	const activeSession = useSelector(selectActiveSession);
 	const shouldFetchFilesList = useSelector(selectShouldFetchSnapshotFilesListForActiveNode);
 	const conectionType = useSelector(selectNodeConnectionType);
 
 	const [isSessionsModalOpen, setIsSessionsModalOpen] = useState(false);
 	const [isNodesModalOpen, setIsNodesModalOpen] = useState(false);
+
+	useEffect(() => {
+		if (activeSession && document?.title) {
+			document.title = "ErigonWatch - " + activeSession.name;
+		}
+	}, [activeSession]);
 
 	useEffect(() => {
 		getBackendUrl();
