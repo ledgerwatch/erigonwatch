@@ -19,8 +19,8 @@ const initialState: ConnectionState = {
 	isConnectedToInternet: true,
 	isConnectedToNode: true,
 	nodeConnectionType: NodeConnectionType.Unknown,
-	//backendAddress: "http://localhost:8080"
-	backendAddress: window.location.origin
+	backendAddress: "http://localhost:8080"
+	//backendAddress: window.location.origin
 };
 
 export const connectionSlice = createSlice({
