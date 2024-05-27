@@ -60,6 +60,7 @@ export const SegmentDetailsView = ({ segment }: SegmentDetailsViewProps) => {
 					<thead>
 						<tr className="border-b">
 							<th>Name</th>
+							<th>Size</th>
 							<th>Time Taken</th>
 							<th>AverageRate</th>
 						</tr>
@@ -67,8 +68,9 @@ export const SegmentDetailsView = ({ segment }: SegmentDetailsViewProps) => {
 					<tbody>
 						<tr>
 							<td className="px-4 py-2">{segment.name}</td>
+							<td className="px-4 py-2">{multipleBytes(segment.totalBytes)}</td>
 							<td className="px-4 py-2">{secondsToHms(segment.downloadedStats?.timeTook || 0)}</td>
-							<td className="px-4 py-2">{multipleBytes(segment.downloadedStats?.averageRate || 0)}</td>
+							<td className="px-4 py-2">{multipleBps(segment.downloadedStats?.averageRate || 0)}</td>
 						</tr>
 					</tbody>
 				</table>
