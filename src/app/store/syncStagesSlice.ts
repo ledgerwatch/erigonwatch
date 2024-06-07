@@ -3,6 +3,12 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "./store";
 import { selectActiveNodeId } from "./appSlice";
 
+export enum StageState {
+	Queued = 0,
+	Running = 1,
+	Completed = 2
+}
+
 export interface NodeSnapshotDownloadStatus {
 	nodeId: string;
 	downloadStatus: SnapshotDownloadStatus;
@@ -66,17 +72,18 @@ export interface SnapshotSegmentIndexStatus {
 
 export interface NodeSyncStage {
 	nodeId: string;
-	stages: SyncStages;
-}
-
-export interface SyncStages {
 	stages: SyncStage[];
-	currentStage: number;
 }
 
 export interface SyncStage {
-	name: string;
-	subStage: boolean;
+	id: string;
+	state: StageState;
+	subStages: SyncSubStage[];
+}
+
+export interface SyncSubStage {
+	id: string;
+	state: StageState;
 }
 
 export interface NodeSnapshotFileList {
@@ -202,11 +209,8 @@ export const selectSnapshotIndexStatusesForNode = createSelector(
 	}
 );
 export const selectSyncStages = (state: RootState): NodeSyncStage[] => state.syncStages.syncStages;
-export const selectSyncStagesForNode = createSelector([selectSyncStages, selectActiveNodeId], (syncStages, activeNodeId): SyncStages => {
-	let result: SyncStages = {
-		stages: [],
-		currentStage: 0
-	} as SyncStages;
+export const selectSyncStagesForNode = createSelector([selectSyncStages, selectActiveNodeId], (syncStages, activeNodeId): SyncStage[] => {
+	let result: SyncStage[] = [];
 	syncStages.forEach((stage) => {
 		if (stage.nodeId === activeNodeId) {
 			result = stage.stages;

@@ -7,7 +7,7 @@ const initialState: SystemInfoState = {
 };
 
 export interface SystemInfoState {
-	networkSpeed: NodeNetworkSpeed[]
+	networkSpeed: NodeNetworkSpeed[];
 }
 
 export interface NodeNetworkSpeed {
@@ -17,8 +17,8 @@ export interface NodeNetworkSpeed {
 
 export interface NetworkSpeed {
 	latency: number;
-    downloadSpeed: number;
-    uploadSpeed: number;
+	downloadSpeed: number;
+	uploadSpeed: number;
 }
 
 export const systemInfoSlice = createSlice({
@@ -40,14 +40,17 @@ export const systemInfoSlice = createSlice({
 export const { addOrUpdateNetworkSpeed } = systemInfoSlice.actions;
 
 export const selectNodesNetworkSpeed = (state: RootState): NodeNetworkSpeed[] => state.sysInfo.networkSpeed;
-export const selectNetworkSpeedForActiveNode = createSelector([selectNodesNetworkSpeed, selectActiveNodeId], (nodeIssues, activeNodeId): NetworkSpeed => {
-	let result: NetworkSpeed = {} as NetworkSpeed;
-	nodeIssues.forEach((issue) => {
-		if (issue.nodeId === activeNodeId) {
-			result = issue.networkSpeed;
-		}
-	});
-	return result;
-});
+export const selectNetworkSpeedForActiveNode = createSelector(
+	[selectNodesNetworkSpeed, selectActiveNodeId],
+	(nodeIssues, activeNodeId): NetworkSpeed => {
+		let result: NetworkSpeed = {} as NetworkSpeed;
+		nodeIssues.forEach((issue) => {
+			if (issue.nodeId === activeNodeId) {
+				result = issue.networkSpeed;
+			}
+		});
+		return result;
+	}
+);
 
 export default systemInfoSlice.reducer;

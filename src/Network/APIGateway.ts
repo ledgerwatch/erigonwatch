@@ -46,7 +46,6 @@ import {
 	SnapshotDownloadStatus,
 	SnapshotIndexingStatus,
 	SyncStage,
-	SyncStages,
 	setNodeSyncStages,
 	setSnapshotDownloadStatus,
 	setSnapshotFilesList,
@@ -290,24 +289,13 @@ export const getSnapshotDownloadStatus = () => {
 				let downloadStatus: SnapshotDownloadStatus = snapshotDownloadStatusFromJson(response.snapshotDownload, currDStats, indexingStatus);
 
 				//not correct stages, need to remove -1 fail on execution
-				let cs = response.syncStages.currentStage;
-				if (cs === 0) cs = 1;
 
-				let stgs: SyncStage[] = [];
-				if (response.syncStages.stagesList != null) {
-					response.syncStages.stagesList.forEach((stage: any) => {
-						let substage = false;
-						if (stage === "Snapshots") substage = true;
-
-						stgs.push({ name: stage, subStage: substage });
-					});
+				if (response.syncStages != null) {
+					if (response.syncStages.length != 0) {
+						store.dispatch(setNodeSyncStages({ nodeId: getNodeId(), stages: response.syncStages as SyncStage[] }));
+					}
 				}
 
-				if (stgs.length != 0) {
-					let syncStages: SyncStages = { stages: stgs, currentStage: cs };
-
-					store.dispatch(setNodeSyncStages({ nodeId: getNodeId(), stages: syncStages }));
-				}
 				store.dispatch(setSnapshotIndexStatus({ nodeId: getNodeId(), indexStatus: indexingStatus }));
 				store.dispatch(setSnapshotDownloadStatus({ nodeId: getNodeId(), downloadStatus: downloadStatus }));
 			}
