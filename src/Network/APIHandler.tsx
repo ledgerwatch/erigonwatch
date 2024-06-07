@@ -1,6 +1,5 @@
 import { setIsConnectedToNode } from "../app/store/connectionSlice";
 import { store } from "../app/store/store";
-import { setTestSnpSyncMsgIdx } from "../app/store/syncStagesSlice";
 import { isLocalVersion } from "../helpers/env";
 import {
 	getBootnodesJsonMock,
@@ -17,9 +16,9 @@ import {
 	getPeersJsonMock,
 	getHeadersMock,
 	getNetworkSpeedMock,
-	nodeInfoMock
+	nodeInfoMock,
+	syncStatsMock
 } from "./../../tests/mocks";
-import { getSyncData } from "./mockData/SnapshotDownloadMock";
 
 const sessionVarName = "sessions";
 const nodeVarName = "nodes";
@@ -314,13 +313,16 @@ export const fetchBootnodes = () => {
 export const fetchSnapshotSync = () => {
 	if (import.meta.env.VITE_SERVER_RESPONSE_TYPE === "MOCK") {
 		return new Promise((resolve, reject) => {
+			resolve(syncStatsMock);
+		});
+		/*return new Promise((resolve, reject) => {
 			let idx = store.getState().syncStages.testSnpSyncMsgIdx;
 			let resp = getSyncData(idx);
 			store.dispatch(setTestSnpSyncMsgIdx(idx + 1));
 			if (resp !== null) {
 				resolve(resp);
 			}
-		});
+		});*/
 	} else {
 		const request = createRequest(snapshotSyncUrl(), "GET");
 		return fetchRequest(request);

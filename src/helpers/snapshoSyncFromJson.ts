@@ -128,16 +128,19 @@ const downloadedStatsFromJson = (json: any): DownloadedStats | null => {
 };
 
 const peersFromJson = (json: any): SegmentPeer[] => {
-	let peers: SegmentPeer[] = [];
+	if (json) {
+		let peers: SegmentPeer[] = [];
 
-	json.forEach((val: any) => {
-		peers.push({
-			url: val.url,
-			downloadRate: val.downloadRate
+		json.forEach((val: any) => {
+			peers.push({
+				url: val.url,
+				downloadRate: val.downloadRate
+			});
 		});
-	});
-
-	return peers;
+		return peers;
+	} else {
+		return [];
+	}
 };
 
 export const snapshotIndexStatusFromJson = (json: any, segmentsCount: number): SnapshotIndexingStatus => {

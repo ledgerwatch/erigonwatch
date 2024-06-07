@@ -1837,3 +1837,2457 @@ export const getNetworkSpeedMock = {
 	downloadSpeed: 77.8538,
 	uploadSpeed: 24.3019
 };
+
+export const syncStatsMock = {
+	blockExecution: {
+		alloc: 0,
+		batch: 0,
+		blkPerSec: 0,
+		blockNumber: 0,
+		from: 0,
+		gasState: 0,
+		mgasPerSec: 0,
+		sys: 0,
+		timeElapsed: 0,
+		to: 0,
+		txPerSec: 0
+	},
+	snapshotDownload: {
+		alloc: 0,
+		connections: 19,
+		downloadFinished: false,
+		downloadRate: 11713962,
+		downloaded: 2266163112,
+		files: 56,
+		peers: 18,
+		segmentsDownloading: {
+			"v1-000000-000500-bodies.seg": {
+				downloadedBytes: 4194304,
+				downloadedStats: {
+					averageRate: 63259,
+					timeTook: 110.229638375
+				},
+				name: "v1-000000-000500-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.0-dev-90e7a44d"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "\u003cnil\u003e"
+					}
+				],
+				totalBytes: 6973070,
+				webseeds: [
+					{
+						downloadRate: 33252,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 26863,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-000000-000500-headers.seg": {
+				downloadedBytes: 40079792,
+				downloadedStats: {
+					averageRate: 385959,
+					timeTook: 174.481601833
+				},
+				name: "v1-000000-000500-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-rc1-64f677a4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.56.2-c9216ce1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-dev-0be04e6d"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					}
+				],
+				totalBytes: 67342768,
+				webseeds: [
+					{
+						downloadRate: 42770,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 130697,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 128312,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 106910,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-000500-001000-bodies.seg": {
+				downloadedBytes: 5847723,
+				downloadedStats: {
+					averageRate: 45214,
+					timeTook: 129.332917416
+				},
+				name: "v1-000500-001000-bodies.seg",
+				peers: [],
+				totalBytes: 5847723,
+				webseeds: []
+			},
+			"v1-000500-001000-headers.seg": {
+				downloadedBytes: 50331648,
+				downloadedStats: {
+					averageRate: 377209,
+					timeTook: 177.755341834
+				},
+				name: "v1-000500-001000-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					}
+				],
+				totalBytes: 67051048,
+				webseeds: [
+					{
+						downloadRate: 124331,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 88807,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 106558,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 106569,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-001000-001500-bodies.seg": {
+				downloadedBytes: 8171368,
+				downloadedStats: {
+					averageRate: 49942,
+					timeTook: 163.616193708
+				},
+				name: "v1-001000-001500-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "\u003cnil\u003e"
+					}
+				],
+				totalBytes: 8171368,
+				webseeds: []
+			},
+			"v1-001000-001500-headers.seg": {
+				downloadedBytes: 80057398,
+				downloadedStats: {
+					averageRate: 501812,
+					timeTook: 163.715650041
+				},
+				name: "v1-001000-001500-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-dev-b7668209"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.0-dev-66b0aa7a"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3-705814b1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					}
+				],
+				totalBytes: 82154550,
+				webseeds: [
+					{
+						downloadRate: 185703,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 102067,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 137776,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 118585,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-001500-002000-bodies.seg": {
+				downloadedBytes: 0,
+				downloadedStats: {
+					averageRate: 24577,
+					timeTook: 162.755802458
+				},
+				name: "v1-001500-002000-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.1"
+					}
+				],
+				totalBytes: 4000085,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-001500-002000-headers.seg": {
+				downloadedBytes: 69820577,
+				downloadedStats: {
+					averageRate: 521961,
+					timeTook: 177.961997
+				},
+				name: "v1-001500-002000-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-dev-b7668209"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					}
+				],
+				totalBytes: 92889249,
+				webseeds: [
+					{
+						downloadRate: 159863,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 94018,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 159862,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 177625,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-002000-002500-bodies.seg": {
+				downloadedBytes: 2097152,
+				downloadedStats: {
+					averageRate: 30623,
+					timeTook: 130.643780167
+				},
+				name: "v1-002000-002500-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					}
+				],
+				totalBytes: 4000819,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 17760,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-002000-002500-headers.seg": {
+				downloadedBytes: 84048627,
+				downloadedStats: {
+					averageRate: 546632,
+					timeTook: 172.939462625
+				},
+				name: "v1-002000-002500-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-dev-0be04e6d"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.49.2-stable-1b54c31c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1"
+					},
+					{
+						downloadRate: 0,
+						url: "\u003cnil\u003e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-rc1-32f7775c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.1-9f1cd651"
+					}
+				],
+				totalBytes: 94534387,
+				webseeds: [
+					{
+						downloadRate: 198638,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 136703,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 121514,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 151893,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-002500-003000-bodies.seg": {
+				downloadedBytes: 2661724,
+				downloadedStats: {
+					averageRate: 28025,
+					timeTook: 169.80499875
+				},
+				name: "v1-002500-003000-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.0-dev-90e7a44d"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					}
+				],
+				totalBytes: 4758876,
+				webseeds: [
+					{
+						downloadRate: 7410,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 13267,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-002500-003000-headers.seg": {
+				downloadedBytes: 31753897,
+				downloadedStats: {
+					averageRate: 603924,
+					timeTook: 167.173041417
+				},
+				name: "v1-002500-003000-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.1-9f1cd651"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.1-9f1cd651"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.49.2-stable-1b54c31c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.1-9f1cd651"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3-705814b1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					}
+				],
+				totalBytes: 100959913,
+				webseeds: [
+					{
+						downloadRate: 93222,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 163118,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 96518,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-003000-003500-bodies.seg": {
+				downloadedBytes: 47890145,
+				downloadedStats: {
+					averageRate: 349208,
+					timeTook: 167.166222625
+				},
+				name: "v1-003000-003500-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.0-4f6eda76"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.49.2-stable-1b54c31c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 58375905,
+				webseeds: [
+					{
+						downloadRate: 88642,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 106325,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 136703,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 15189,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-003000-003500-headers.seg": {
+				downloadedBytes: 18874368,
+				downloadedStats: {
+					averageRate: 959731,
+					timeTook: 177.026019209
+				},
+				name: "v1-003000-003500-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-rc1-32f7775c"
+					}
+				],
+				totalBytes: 169897389,
+				webseeds: [
+					{
+						downloadRate: 232139,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 232138,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 580340,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-003500-004000-bodies.seg": {
+				downloadedBytes: 64651872,
+				downloadedStats: {
+					averageRate: 383539,
+					timeTook: 168.566612
+				},
+				name: "v1-003500-004000-bodies.seg",
+				peers: [],
+				totalBytes: 64651872,
+				webseeds: []
+			},
+			"v1-003500-004000-headers.seg": {
+				downloadedBytes: 106954752,
+				downloadedStats: {
+					averageRate: 1161849,
+					timeTook: 179.010738709
+				},
+				name: "v1-003500-004000-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.49.2-stable-1b54c31c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.0-0f0a4452"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.1-9f1cd651"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					}
+				],
+				totalBytes: 207983600,
+				webseeds: [
+					{
+						downloadRate: 299391,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 64155,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 278006,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 449087,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004000-004100-bodies.seg": {
+				downloadedBytes: 0,
+				downloadedStats: {
+					averageRate: 80870,
+					timeTook: 156.396735583
+				},
+				name: "v1-004000-004100-bodies.seg",
+				peers: null,
+				totalBytes: 0,
+				webseeds: null
+			},
+			"v1-004000-004100-headers.seg": {
+				downloadedBytes: 0,
+				downloadedStats: {
+					averageRate: 282002,
+					timeTook: 158.740396208
+				},
+				name: "v1-004000-004100-headers.seg",
+				peers: null,
+				totalBytes: 0,
+				webseeds: null
+			},
+			"v1-004100-004200-bodies.seg": {
+				downloadedBytes: 4194304,
+				downloadedStats: {
+					averageRate: 106493,
+					timeTook: 118.032239667
+				},
+				name: "v1-004100-004200-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.1-02c9d4ba"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					}
+				],
+				totalBytes: 12569613,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 26864,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 26858,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004100-004200-headers.seg": {
+				downloadedBytes: 22244343,
+				downloadedStats: {
+					averageRate: 303225,
+					timeTook: 149.4368175
+				},
+				name: "v1-004100-004200-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 27019,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.0-dev-66b0aa7a"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 45313015,
+				webseeds: [
+					{
+						downloadRate: 32269,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 16134,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 32269,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 74332,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004200-004300-bodies.seg": {
+				downloadedBytes: 13692341,
+				downloadedStats: {
+					averageRate: 92544,
+					timeTook: 147.953828542
+				},
+				name: "v1-004200-004300-bodies.seg",
+				peers: [],
+				totalBytes: 13692341,
+				webseeds: []
+			},
+			"v1-004200-004300-headers.seg": {
+				downloadedBytes: 0,
+				downloadedStats: {
+					averageRate: 240606,
+					timeTook: 183.734589709
+				},
+				name: "v1-004200-004300-headers.seg",
+				peers: null,
+				totalBytes: 0,
+				webseeds: null
+			},
+			"v1-004300-004400-bodies.seg": {
+				downloadedBytes: 4194304,
+				downloadedStats: {
+					averageRate: 80494,
+					timeTook: 152.798696542
+				},
+				name: "v1-004300-004400-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					}
+				],
+				totalBytes: 12299440,
+				webseeds: [
+					{
+						downloadRate: 26863,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 26858,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004300-004400-headers.seg": {
+				downloadedBytes: 0,
+				downloadedStats: {
+					averageRate: 271899,
+					timeTook: 169.33102875
+				},
+				name: "v1-004300-004400-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					}
+				],
+				totalBytes: 46040969,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004400-004500-bodies.seg": {
+				downloadedBytes: 0,
+				downloadedStats: {
+					averageRate: 97255,
+					timeTook: 134.934557458
+				},
+				name: "v1-004400-004500-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 13123195,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004400-004500-headers.seg": {
+				downloadedBytes: 39989707,
+				downloadedStats: {
+					averageRate: 269021,
+					timeTook: 172.035453042
+				},
+				name: "v1-004400-004500-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					}
+				],
+				totalBytes: 46281163,
+				webseeds: [
+					{
+						downloadRate: 122659,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 15189,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 60757,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 91136,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004500-004600-bodies.seg": {
+				downloadedBytes: 6322976,
+				downloadedStats: {
+					averageRate: 82209,
+					timeTook: 153.441611709
+				},
+				name: "v1-004500-004600-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 12614432,
+				webseeds: [
+					{
+						downloadRate: 321,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 21391,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 24089,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 21385,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004500-004600-headers.seg": {
+				downloadedBytes: 42019757,
+				downloadedStats: {
+					averageRate: 264865,
+					timeTook: 174.481039542
+				},
+				name: "v1-004500-004600-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3-705814b1"
+					}
+				],
+				totalBytes: 46214061,
+				webseeds: [
+					{
+						downloadRate: 66822,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 102434,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 70063,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 39802,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004600-004700-bodies.seg": {
+				downloadedBytes: 13295803,
+				downloadedStats: {
+					averageRate: 90094,
+					timeTook: 147.576713791
+				},
+				name: "v1-004600-004700-bodies.seg",
+				peers: [],
+				totalBytes: 13295803,
+				webseeds: []
+			},
+			"v1-004600-004700-headers.seg": {
+				downloadedBytes: 29891524,
+				downloadedStats: {
+					averageRate: 277879,
+					timeTook: 167.946186209
+				},
+				name: "v1-004600-004700-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 46668740,
+				webseeds: [
+					{
+						downloadRate: 80675,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 52493,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 96811,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004700-004800-bodies.seg": {
+				downloadedBytes: 8388608,
+				downloadedStats: {
+					averageRate: 94781,
+					timeTook: 141.407781875
+				},
+				name: "v1-004700-004800-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.0-0f0a4452"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					}
+				],
+				totalBytes: 13402793,
+				webseeds: [
+					{
+						downloadRate: 25247,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 21385,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 25247,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 23083,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004700-004800-headers.seg": {
+				downloadedBytes: 43135229,
+				downloadedStats: {
+					averageRate: 308093,
+					timeTook: 153.620926792
+				},
+				name: "v1-004700-004800-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.0-0f0a4452"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 25116,
+						url: "erigon: 3.00.0-dev-fb07623d"
+					}
+				],
+				totalBytes: 47329533,
+				webseeds: [
+					{
+						downloadRate: 91135,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 89201,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 69392,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 78387,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004800-004900-bodies.seg": {
+				downloadedBytes: 2097152,
+				downloadedStats: {
+					averageRate: 75160,
+					timeTook: 171.339461
+				},
+				name: "v1-004800-004900-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					}
+				],
+				totalBytes: 12878020,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 36104,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004800-004900-headers.seg": {
+				downloadedBytes: 23068672,
+				downloadedStats: {
+					averageRate: 316555,
+					timeTook: 151.3641605
+				},
+				name: "v1-004800-004900-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					}
+				],
+				totalBytes: 47915131,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 104898,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 279729,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004900-005000-bodies.seg": {
+				downloadedBytes: 10485760,
+				downloadedStats: {
+					averageRate: 85483,
+					timeTook: 175.703951042
+				},
+				name: "v1-004900-005000-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 15019825,
+				webseeds: [
+					{
+						downloadRate: 13868,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 13266,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 14659,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 26536,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-004900-005000-headers.seg": {
+				downloadedBytes: 222809,
+				downloadedStats: {
+					averageRate: 273600,
+					timeTook: 177.11002675
+				},
+				name: "v1-004900-005000-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-72bc4fe0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 48457305,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon2-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 12334,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005000-005100-bodies.seg": {
+				downloadedBytes: 9580281,
+				downloadedStats: {
+					averageRate: 82717,
+					timeTook: 166.525320709
+				},
+				name: "v1-005000-005100-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.2-ffb6b83c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.0-dev-96b508c0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3-705814b1"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3"
+					}
+				],
+				totalBytes: 13774585,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 43485,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 21928,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005000-005100-headers.seg": {
+				downloadedBytes: 0,
+				downloadedStats: {
+					averageRate: 287020,
+					timeTook: 168.659210958
+				},
+				name: "v1-005000-005100-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.1-9f1cd651"
+					}
+				],
+				totalBytes: 48408635,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005100-005200-bodies.seg": {
+				downloadedBytes: 2097152,
+				downloadedStats: {
+					averageRate: 84999,
+					timeTook: 150.471197459
+				},
+				name: "v1-005100-005200-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					}
+				],
+				totalBytes: 12790005,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 116103,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005100-005200-headers.seg": {
+				downloadedBytes: 27902557,
+				downloadedStats: {
+					averageRate: 307222,
+					timeTook: 159.083408583
+				},
+				name: "v1-005100-005200-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-dev-b7668209"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					}
+				],
+				totalBytes: 48874077,
+				webseeds: [
+					{
+						downloadRate: 252787,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 36112,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 191575,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005200-005300-bodies.seg": {
+				downloadedBytes: 4318856,
+				downloadedStats: {
+					averageRate: 80083,
+					timeTook: 158.677085083
+				},
+				name: "v1-005200-005300-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.2-125509e4"
+					},
+					{
+						downloadRate: 25335,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3-705814b1"
+					}
+				],
+				totalBytes: 12707464,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 19066,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 19066,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005200-005300-headers.seg": {
+				downloadedBytes: 15560267,
+				downloadedStats: {
+					averageRate: 294874,
+					timeTook: 173.673145542
+				},
+				name: "v1-005200-005300-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 3.00.0-dev-fb07623d"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.2-ffb6b83c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.2"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 51211851,
+				webseeds: [
+					{
+						downloadRate: 110135,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 110182,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 188395,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005300-005400-bodies.seg": {
+				downloadedBytes: 12416595,
+				downloadedStats: {
+					averageRate: 83905,
+					timeTook: 147.983276167
+				},
+				name: "v1-005300-005400-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "\u003cnil\u003e"
+					}
+				],
+				totalBytes: 12416595,
+				webseeds: []
+			},
+			"v1-005300-005400-headers.seg": {
+				downloadedBytes: 6985641,
+				downloadedStats: {
+					averageRate: 303009,
+					timeTook: 168.396535208
+				},
+				name: "v1-005300-005400-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.2-a013ec25"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 3.00.0-dev-fb07623d"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					}
+				],
+				totalBytes: 51025833,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 63517,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005400-005500-bodies.seg": {
+				downloadedBytes: 2097152,
+				downloadedStats: {
+					averageRate: 88907,
+					timeTook: 145.8828385
+				},
+				name: "v1-005400-005500-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 23307,
+						url: "erigon: 3.00.0-dev-fb07623d"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.0"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.1-9f1cd651"
+					}
+				],
+				totalBytes: 12970057,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005400-005500-headers.seg": {
+				downloadedBytes: 40583903,
+				downloadedStats: {
+					averageRate: 305500,
+					timeTook: 167.167334375
+				},
+				name: "v1-005400-005500-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					}
+				],
+				totalBytes: 51069663,
+				webseeds: [
+					{
+						downloadRate: 91136,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 121516,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 81292,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005500-005600-bodies.seg": {
+				downloadedBytes: 2199859,
+				downloadedStats: {
+					averageRate: 75958,
+					timeTook: 167.008131541
+				},
+				name: "v1-005500-005600-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-dev-b7668209"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0"
+					}
+				],
+				totalBytes: 12685619,
+				webseeds: [
+					{
+						downloadRate: 0,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 1047,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 21385,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005500-005600-headers.seg": {
+				downloadedBytes: 4194304,
+				downloadedStats: {
+					averageRate: 309608,
+					timeTook: 165.536468792
+				},
+				name: "v1-005500-005600-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0"
+					}
+				],
+				totalBytes: 51251548,
+				webseeds: [
+					{
+						downloadRate: 55090,
+						url: "erigon2-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 55091,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005600-005700-bodies.seg": {
+				downloadedBytes: 0,
+				downloadedStats: {
+					averageRate: 69435,
+					timeTook: 174.906785542
+				},
+				name: "v1-005600-005700-bodies.seg",
+				peers: null,
+				totalBytes: 0,
+				webseeds: null
+			},
+			"v1-005600-005700-headers.seg": {
+				downloadedBytes: 39845888,
+				downloadedStats: {
+					averageRate: 329231,
+					timeTook: 156.4972875
+				},
+				name: "v1-005600-005700-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.0-7883a4e3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.59.3-088fd8ef"
+					}
+				],
+				totalBytes: 51523859,
+				webseeds: [
+					{
+						downloadRate: 139834,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 192272,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005700-005800-bodies.seg": {
+				downloadedBytes: 2097152,
+				downloadedStats: {
+					averageRate: 75664,
+					timeTook: 163.22090825
+				},
+				name: "v1-005700-005800-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.57.3"
+					}
+				],
+				totalBytes: 12350076,
+				webseeds: [
+					{
+						downloadRate: 115990,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005700-005800-headers.seg": {
+				downloadedBytes: 4194304,
+				downloadedStats: {
+					averageRate: 307202,
+					timeTook: 166.158636958
+				},
+				name: "v1-005700-005800-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					}
+				],
+				totalBytes: 51044320,
+				webseeds: [
+					{
+						downloadRate: 232196,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon3-v3-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005800-005900-bodies.seg": {
+				downloadedBytes: 11155008,
+				downloadedStats: {
+					averageRate: 102764,
+					timeTook: 128.956807042
+				},
+				name: "v1-005800-005900-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 2.58.1-f12e451c"
+					}
+				],
+				totalBytes: 13252160,
+				webseeds: [
+					{
+						downloadRate: 92976,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005800-005900-headers.seg": {
+				downloadedBytes: 33025615,
+				downloadedStats: {
+					averageRate: 331202,
+					timeTook: 156.701844584
+				},
+				name: "v1-005800-005900-headers.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 2.60.1-9471c44e"
+					}
+				],
+				totalBytes: 51899983,
+				webseeds: [
+					{
+						downloadRate: 412913,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005900-006000-bodies.seg": {
+				downloadedBytes: 6348029,
+				downloadedStats: {
+					averageRate: 78018,
+					timeTook: 162.007083833
+				},
+				name: "v1-005900-006000-bodies.seg",
+				peers: [
+					{
+						downloadRate: 0,
+						url: "erigon: 3.00.0-dev-0445dc34"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 3.00.0-dev-fb07623d"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 3.00.0-dev-3c99afeb"
+					}
+				],
+				totalBytes: 12639485,
+				webseeds: [
+					{
+						downloadRate: 52908,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					}
+				]
+			},
+			"v1-005900-006000-headers.seg": {
+				downloadedBytes: 45696653,
+				downloadedStats: {
+					averageRate: 309552,
+					timeTook: 167.945973417
+				},
+				name: "v1-005900-006000-headers.seg",
+				peers: [
+					{
+						downloadRate: 30148,
+						url: "erigon: 3.00.0-dev-fb07623d"
+					},
+					{
+						downloadRate: 40508,
+						url: "erigon: 3.00.0-dev-3c99afeb"
+					},
+					{
+						downloadRate: 0,
+						url: "erigon: 3.00.0-dev-0445dc34"
+					}
+				],
+				totalBytes: 51988109,
+				webseeds: [
+					{
+						downloadRate: 248774,
+						url: "erigon3-v1-snapshots-sepolia.erigon.network"
+					}
+				]
+			}
+		},
+		sys: 0,
+		torrentMetadataReady: 56,
+		total: 2270357416,
+		totalTime: 200,
+		uploadRate: 0
+	},
+	snapshotIndexing: {
+		segments: null,
+		timeElapsed: 0
+	},
+	syncFinished: false,
+	syncStages: [
+		{
+			id: "Snapshots",
+			state: 1,
+			subStages: [
+				{
+					state: 1,
+					id: "Download header-chain"
+				},
+				{
+					state: 0,
+					id: "Download snapshots"
+				},
+				{
+					state: 0,
+					id: "Indexing"
+				},
+				{
+					state: 0,
+					id: "Fill DB"
+				}
+			]
+		},
+		{
+			id: "BlockHashes",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "Senders",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "Execution",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "HashState",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "IntermediateHashes",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "CallTraces",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "AccountHistoryIndex",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "StorageHistoryIndex",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "LogIndex",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "TxLookup",
+			state: 0,
+			subStages: []
+		},
+		{
+			id: "Finish",
+			state: 0,
+			subStages: []
+		}
+	]
+};

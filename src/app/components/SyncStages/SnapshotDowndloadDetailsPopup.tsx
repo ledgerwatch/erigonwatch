@@ -16,7 +16,6 @@ export const SnapshotDowndloadDetailsPopup = ({ onClose }: SnapshotDowndloadDeta
 	const [wss, setWss] = useState(0);
 	const [pss, setPss] = useState(0);
 	const [selectedSegment, setSelectedSegment] = useState<SnapshotSegmentDownloadStatus | null>(null);
-	const [visibleSegments, setVisibleSegments] = useState<SnapshotSegmentDownloadStatus[]>(syncStatus.segments);
 
 	const handleKeyPress = (event: KeyboardEvent) => {
 		if (event.key === "Escape") {
@@ -46,14 +45,6 @@ export const SnapshotDowndloadDetailsPopup = ({ onClose }: SnapshotDowndloadDeta
 		setWss(ws);
 		setPss(ps);
 	}, [syncStatus]);
-
-	useEffect(() => {
-		if (selectedSegment) {
-			setVisibleSegments([selectedSegment]);
-		} else {
-			setVisibleSegments(syncStatus.segments);
-		}
-	}, [selectedSegment]);
 
 	const peersRate = (segment: SnapshotSegmentDownloadStatus): number => {
 		let downloadRate = 0;
