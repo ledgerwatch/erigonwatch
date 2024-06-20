@@ -16,8 +16,16 @@ export const nodeInfoFromJsonLocal = (json: any): NodeInfo => {
 		parsedJSON = JSON.parse(decodedString);
 	}
 
-	let enodes = [];
-	enodes.push(json.enode);
+	let enodes: Enode[] = [];
+	enodes.push({
+		enode: json.enode || "",
+		enr: json.enr || "",
+		ports: {
+			discovery: json.ports.discovery || 0,
+			listener: json.ports.listener || 0
+		},
+		listener_addr: json.listener_addr || ""
+	});
 
 	return {
 		id: json.id,
